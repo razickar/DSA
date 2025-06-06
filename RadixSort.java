@@ -16,7 +16,7 @@ public class RadixSort {
         int[] output = new int[n];
         int[] count = new int[10]; // for digits 0-9
 
-        // Count occurrences of digits
+        // frequeny for every digit 1s 10s 100.....
         for (int i = 0; i < n; i++) {
             int digit = (arr[i] / place) % 10;
             count[digit]++;
