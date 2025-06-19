@@ -23,9 +23,9 @@ public class MergeSort {
 		 for(int i = 0; i < len; i++) {
 			 arr[i] = a[i+left];
 		 }
-		 int leftStart = 0;
-		 int leftEnd = mid - left;
-		 int rightStart = mid - left + 1;
+		 int leftStart = 0;				// end - start			|
+		 int leftEnd = mid - left;			//-------------  = ans + start  |   working 	
+		 int rightStart = mid - left + 1;		//     2			|
 		 int rightEnd = len-1;
 		 int idx = left;
 		 while(leftStart <= leftEnd && rightStart <= rightEnd) {
