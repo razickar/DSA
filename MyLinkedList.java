@@ -52,7 +52,7 @@ class LinkedList<T> {
     
     public T removeFirst() {
         if (head == null) {
-            throw new RuntimeException("List is empty");
+            System.out.println("List is empty");return;
         }
         
         T data = head.data;
