@@ -64,7 +64,7 @@ class LinkedList<T> {
     
     public T removeLast() {
         if (head == null) {
-            throw new RuntimeException("List is empty");
+            System.out.println("List is empty");return;
         }
         
         if (head.next == null) {
@@ -87,7 +87,7 @@ class LinkedList<T> {
   
     public T get(int index) {
         if (index < 0 || index >= size) {
-            throw new IndexOutOfBoundsException("Index out of bounds");
+            System.out.println("Index out of bounds");return;
         }
         
         Node<T> current = head;
@@ -161,6 +161,23 @@ public class MyLinkedList {
     	ar.display();	
     	
     	ar.addFirst("dadaaa");
+    	
+    	ar.display();
+    	
+    	ar.removeFirst();
+    	ar.display();
+    	ar.removeLast();
+    	ar.display();
+
+        LinkedList<Integer> ar = new LinkedList<>();
+    	
+    	ar.add(1);
+    	ar.add(2);
+    	ar.add(6);
+    	
+    	ar.display();	
+    	
+    	ar.addFirst(11);
     	
     	ar.display();
     	
