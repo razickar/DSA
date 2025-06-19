@@ -175,6 +175,19 @@ public class CustomArrayList {
      
   
      System.out.println("List: " + list);
+
+	  MyArrayList<Integer> list = new MyArrayList<>();
+     
+     
+     list.add(7);
+     list.add(8);
+     list.add(11);
+     list.add(13);
+     
+     
+     
+  
+     System.out.println("List: " + list);
      
      
  }
